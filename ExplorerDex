@@ -1910,7 +1910,7 @@ Mouse.Button1Down:connect(function()
 	if CurrentWindow == "Explorer" and Settings.ClickSelect then
 		local target = Mouse.Target
 		if target then
-			SetSelection:OnClientInvoke({target})
+			SetSelection:Invoke({target})
 		end
 	end
 end)
